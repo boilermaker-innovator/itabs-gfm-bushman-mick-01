@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bushman Mick | Living Free in the Australian Outback</title>
     
-    <!-- Social Preview -->
     <meta property="og:title" content="Bushman Mick | Living Free in the Australian Outback">
     <meta property="og:description" content="Join Mick on his adventure - left the Matrix in 2018, now living on $50/week in his van Gypsy.">
     <meta property="og:image" content="https://i.ibb.co/Cp6VzH2J/bushm01.webp">
     <meta name="twitter:card" content="summary_large_image">
     
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
@@ -25,11 +23,7 @@
             --cream: #FEFAE0;
         }
         
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             font-family: 'Source Sans Pro', sans-serif;
@@ -38,7 +32,6 @@
             color: var(--cream);
         }
         
-        /* Header */
         .header {
             background: linear-gradient(135deg, var(--outback-orange) 0%, var(--outback-red) 100%);
             padding: 15px;
@@ -56,19 +49,18 @@
             opacity: 0.9;
         }
         
-        /* Main Container */
         .container {
             max-width: 500px;
             margin: 0 auto;
             padding: 15px;
         }
         
-        /* Video Section */
         .video-section {
-            background: rgba(255,255,255,0.05);
-            border-radius: 16px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 20px;
             overflow: hidden;
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 2px solid rgba(255,255,255,0.15);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
         }
         
         .video-wrapper {
@@ -87,7 +79,6 @@
             border: none;
         }
         
-        /* iTabs Button */
         .itabs-btn {
             position: absolute;
             bottom: 12px;
@@ -106,9 +97,7 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.4);
         }
         
-        .itabs-btn:hover {
-            transform: scale(1.1);
-        }
+        .itabs-btn:hover { transform: scale(1.1); }
         
         .itabs-btn span {
             color: white;
@@ -118,7 +107,6 @@
             font-style: italic;
         }
         
-        /* Video Title Bar */
         .video-title-bar {
             padding: 12px 15px;
             background: rgba(0,0,0,0.3);
@@ -129,9 +117,6 @@
             font-family: 'Bebas Neue', sans-serif;
             font-size: 1.2rem;
             letter-spacing: 1px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
         }
         
         .video-subtitle {
@@ -140,7 +125,6 @@
             margin-top: 3px;
         }
         
-        /* Tab Buttons */
         .tab-buttons {
             display: flex;
             flex-wrap: wrap;
@@ -167,9 +151,7 @@
             gap: 8px;
         }
         
-        .tab-btn:hover {
-            background: rgba(255,255,255,0.15);
-        }
+        .tab-btn:hover { background: rgba(255,255,255,0.15); }
         
         .tab-btn.active {
             background: var(--bush-green);
@@ -181,20 +163,15 @@
             border-color: white;
         }
         
-        .tab-btn .emoji {
-            font-size: 1.2rem;
-        }
+        .tab-btn .emoji { font-size: 1.2rem; }
         
-        /* Progress Bar (for GoFundMe) */
         .progress-section {
             padding: 15px;
             background: rgba(0,0,0,0.2);
             display: none;
         }
         
-        .progress-section.active {
-            display: block;
-        }
+        .progress-section.active { display: block; }
         
         .progress-bar {
             height: 8px;
@@ -218,11 +195,8 @@
             opacity: 0.8;
         }
         
-        .progress-text strong {
-            color: var(--outback-orange);
-        }
+        .progress-text strong { color: var(--outback-orange); }
         
-        /* Profile Section */
         .profile {
             display: flex;
             align-items: center;
@@ -253,7 +227,6 @@
             line-height: 1.3;
         }
         
-        /* Social Links */
         .social-links {
             display: flex;
             gap: 10px;
@@ -271,50 +244,25 @@
             transition: transform 0.3s ease;
         }
         
-        .social-btn:hover {
-            transform: scale(1.02);
-        }
+        .social-btn:hover { transform: scale(1.02); }
         
-        .social-btn.youtube {
-            background: #FF0000;
-            color: white;
-        }
+        .social-btn.youtube { background: #FF0000; color: white; }
+        .social-btn.instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: white; }
+        .social-btn.donate { background: linear-gradient(135deg, var(--bush-green), #2d5a30); color: white; }
         
-        .social-btn.instagram {
-            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-            color: white;
-        }
-        
-        .social-btn.donate {
-            background: linear-gradient(135deg, var(--bush-green), #2d5a30);
-            color: white;
-        }
-        
-        /* Footer */
         .footer {
             text-align: center;
             padding: 20px;
             margin-top: 15px;
         }
         
-        .footer p {
-            font-size: 0.75rem;
-            opacity: 0.4;
-        }
+        .footer p { font-size: 0.75rem; opacity: 0.4; }
+        .footer a { color: var(--bush-green); text-decoration: none; }
         
-        .footer a {
-            color: var(--bush-green);
-            text-decoration: none;
-        }
-        
-        /* Popup Overlay */
         .popup-overlay {
             display: none;
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            top: 0; left: 0; right: 0; bottom: 0;
             background: rgba(0,0,0,0.9);
             z-index: 1000;
             align-items: center;
@@ -322,9 +270,7 @@
             padding: 15px;
         }
         
-        .popup-overlay.active {
-            display: flex;
-        }
+        .popup-overlay.active { display: flex; }
         
         .popup-content {
             background: linear-gradient(180deg, #2a2a2a 0%, #1a1a1a 100%);
@@ -347,9 +293,7 @@
             align-items: center;
         }
         
-        .popup-header.donate {
-            background: linear-gradient(135deg, var(--outback-orange), var(--outback-red));
-        }
+        .popup-header.donate { background: linear-gradient(135deg, var(--outback-orange), var(--outback-red)); }
         
         .popup-header h3 {
             font-family: 'Bebas Neue', sans-serif;
@@ -368,17 +312,10 @@
             cursor: pointer;
         }
         
-        .popup-body {
-            padding: 20px;
-        }
+        .popup-body { padding: 20px; }
         
-        .popup-section {
-            margin-bottom: 18px;
-        }
-        
-        .popup-section:last-child {
-            margin-bottom: 0;
-        }
+        .popup-section { margin-bottom: 18px; }
+        .popup-section:last-child { margin-bottom: 0; }
         
         .popup-section h4 {
             font-size: 0.75rem;
@@ -420,24 +357,17 @@
             margin-top: 15px;
         }
         
-        .action-btn.youtube {
-            background: #FF0000;
-        }
-        
-        .action-btn.green {
-            background: linear-gradient(135deg, var(--bush-green), #2d5a30);
-        }
+        .action-btn.youtube { background: #FF0000; }
+        .action-btn.green { background: linear-gradient(135deg, var(--bush-green), #2d5a30); }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <h1>🦘 BUSHMAN MICK</h1>
         <p>Living Free in the Australian Outback</p>
     </header>
     
     <div class="container">
-        <!-- Video Section -->
         <section class="video-section">
             <div class="video-wrapper">
                 <iframe id="video-player" 
@@ -455,7 +385,6 @@
                 <div class="video-subtitle" id="current-subtitle">Dodgy mechanic destroyed his engine</div>
             </div>
             
-            <!-- Progress Bar (shows for GoFundMe) -->
             <div class="progress-section active" id="progress-section">
                 <div class="progress-bar">
                     <div class="progress-fill"></div>
@@ -466,7 +395,6 @@
                 </div>
             </div>
             
-            <!-- Tab Buttons -->
             <div class="tab-buttons">
                 <button class="tab-btn featured active" onclick="switchVideo(0)">
                     <span class="emoji">🆘</span> Help Mick
@@ -475,7 +403,7 @@
                     <span class="emoji">🌴</span> How I Live
                 </button>
                 <button class="tab-btn" onclick="switchVideo(2)">
-                    <span class="emoji">🐊</span> Wildlife
+                    <span class="emoji">☀️</span> Winter Fishing
                 </button>
                 <button class="tab-btn" onclick="switchVideo(3)">
                     <span class="emoji">🎣</span> Catching Barra
@@ -483,7 +411,6 @@
             </div>
         </section>
         
-        <!-- Profile -->
         <section class="profile">
             <img src="https://i.ibb.co/Cp6VzH2J/bushm01.webp" alt="Bushman Mick" class="profile-img">
             <div class="profile-info">
@@ -492,34 +419,28 @@
             </div>
         </section>
         
-        <!-- Social Links -->
         <div class="social-links">
             <a href="https://www.youtube.com/@bushmanmick777?sub_confirmation=1" target="_blank" class="social-btn youtube">▶ YouTube</a>
             <a href="https://www.instagram.com/bushmanmick/" target="_blank" class="social-btn instagram">📷 Insta</a>
             <a href="https://www.gofundme.com/f/help-bushman-mick" target="_blank" class="social-btn donate">💚 Donate</a>
         </div>
         
-        <!-- Footer -->
         <footer class="footer">
             <p>Powered by <a href="https://itabs.ai" target="_blank">iTabs.ai</a></p>
         </footer>
     </div>
     
-    <!-- Popup -->
     <div class="popup-overlay" id="popup">
         <div class="popup-content">
             <div class="popup-header" id="popup-header">
                 <h3 id="popup-title">🆘 Help Bushman Mick</h3>
                 <button class="close-btn" onclick="closePopup()">✕</button>
             </div>
-            <div class="popup-body" id="popup-body">
-                <!-- Content injected by JS -->
-            </div>
+            <div class="popup-body" id="popup-body"></div>
         </div>
     </div>
     
     <script>
-        // Video data
         const videos = [
             {
                 id: 'TqB0YdYvGdk',
@@ -577,26 +498,31 @@
                 `
             },
             {
-                id: 'u9XVOq6muG0',
-                title: '🐊 Wild Buffalo, Horses & Crocs',
-                subtitle: 'Chasing wildlife with his drone',
+                id: 'LL_Ap4HpW1Q',
+                title: '☀️ Winter Fishing Far North QLD',
+                subtitle: 'Beautiful day exploring waterholes',
                 showProgress: false,
-                popupTitle: '🐊 Wildlife Adventures',
+                popupTitle: '☀️ Winter Fishing FNQ',
                 popupClass: '',
                 popupContent: `
                     <div class="popup-section">
-                        <h4>🦬 Water Buffalo</h4>
-                        <p>Started chasing 3 buffalo with the drone... then 3 turned into 6... then 6 turned into HUNDREDS. Truly in buffalo country!</p>
+                        <h4>🌤️ Perfect Conditions</h4>
+                        <p>Winter's just started up here in Far North Queensland - the rain has stopped, the sun is out, and it's bloody beautiful. Perfect time to explore old fishing spots.</p>
                     </div>
                     <div class="popup-section">
-                        <h4>🐴 Wild Brumbies</h4>
-                        <p>Majestic wild horses of all colors, shapes, and sizes. Watching them protect their young and live free - amazing to witness.</p>
+                        <h4>🎯 Fishing Techniques</h4>
+                        <ul>
+                            <li>Cast netting for mullet bait</li>
+                            <li>Staying low and quiet near croc country</li>
+                            <li>Finding the deeper holes</li>
+                            <li>Exploring multiple spots till you find fish</li>
+                        </ul>
                     </div>
                     <div class="popup-section">
-                        <h4>🐊 Saltwater Crocodiles</h4>
-                        <p>Found a 4-metre croc in a billabong. Caught him on camera stalking wallabies in knee-high water. NEVER enter croc waters!</p>
+                        <h4>🐊 Croc Awareness</h4>
+                        <p>Always checking for crocs before fishing. If there's any around, they definitely know I'm there. Not taking any risks!</p>
                     </div>
-                    <a href="https://www.instagram.com/bushmanmick/" target="_blank" class="action-btn green">📷 FOLLOW ON INSTAGRAM</a>
+                    <a href="https://www.youtube.com/@bushmanmick777?sub_confirmation=1" target="_blank" class="action-btn youtube">▶ SUBSCRIBE</a>
                 `
             },
             {
@@ -626,55 +552,42 @@
         
         let currentVideo = 0;
         
-        // Switch video
         function switchVideo(index) {
             currentVideo = index;
             const video = videos[index];
             
-            // Update video player
-            document.getElementById('video-player').src = `https://www.youtube.com/embed/${video.id}`;
-            
-            // Update title
+            document.getElementById('video-player').src = 'https://www.youtube.com/embed/' + video.id;
             document.getElementById('current-title').textContent = video.title;
             document.getElementById('current-subtitle').textContent = video.subtitle;
-            
-            // Show/hide progress bar
             document.getElementById('progress-section').classList.toggle('active', video.showProgress);
             
-            // Update tab buttons
-            document.querySelectorAll('.tab-btn').forEach((btn, i) => {
+            document.querySelectorAll('.tab-btn').forEach(function(btn, i) {
                 btn.classList.remove('active');
                 if (i === index) btn.classList.add('active');
             });
         }
         
-        // Open popup
         function openPopup() {
             const video = videos[currentVideo];
             const header = document.getElementById('popup-header');
             
             document.getElementById('popup-title').textContent = video.popupTitle;
             document.getElementById('popup-body').innerHTML = video.popupContent;
-            
-            // Set header class
             header.className = 'popup-header' + (video.popupClass ? ' ' + video.popupClass : '');
             
             document.getElementById('popup').classList.add('active');
             document.body.style.overflow = 'hidden';
         }
         
-        // Close popup
         function closePopup() {
             document.getElementById('popup').classList.remove('active');
             document.body.style.overflow = 'auto';
         }
         
-        // Close on overlay click
         document.getElementById('popup').addEventListener('click', function(e) {
             if (e.target === this) closePopup();
         });
         
-        // Close on escape
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') closePopup();
         });
